@@ -85,6 +85,7 @@ def withRvm(Closure stage) {
   paths = [
       "$RVM_HOME/gems/$rubyVersion@$rvmGemset/bin",
       "$RVM_HOME/gems/$rubyVersion@global/bin",
+      "$RVM_HOME/gems/$rubyVersion/bin",
       "$RVM_HOME/rubies/$rubyVersion/bin",
       "$RVM_HOME/bin",
       "${env.PATH}"
