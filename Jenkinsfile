@@ -9,7 +9,8 @@ node('master') {
 
           // Configure Workspace
           sh 'which bundle || gem install bundler'
-          //sh 'bundle install'
+          sh 'which bundler'
+          sh 'bundle install'
 
           // Build
           rake 'commit:build'
